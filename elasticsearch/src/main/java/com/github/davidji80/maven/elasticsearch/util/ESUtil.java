@@ -1,4 +1,4 @@
-package com.github.davidji80.maven.elasticsearch;
+package com.github.davidji80.maven.elasticsearch.util;
 
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
@@ -36,7 +36,7 @@ public class ESUtil {
      * @return
      * @throws UnknownHostException
      */
-    private static TransportClient getClient(){
+    public static TransportClient getClient(){
         if(client==null){
             synchronized (TransportClient.class){
                 try {

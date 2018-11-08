@@ -1,5 +1,6 @@
 package com.github.davidji80.maven.elasticsearch;
 
+import com.github.davidji80.maven.elasticsearch.util.ESUtil;
 import org.elasticsearch.common.xcontent.XContentBuilder;
 import org.elasticsearch.common.xcontent.XContentFactory;
 import java.io.IOException;
