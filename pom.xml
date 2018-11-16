@@ -11,6 +11,7 @@
   <modules>
     <module>elasticsearch</module>
       <module>simpleCF</module>
+      <module>mahout</module>
   </modules>
 
   <name>maven</name>

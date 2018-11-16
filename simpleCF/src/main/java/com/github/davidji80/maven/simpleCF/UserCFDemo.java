@@ -83,6 +83,7 @@ public class UserCFDemo {
                     +allUserMovieStarList[Integer.parseInt(similarityUsers.get(1).get(0).toString())][i]/Double.parseDouble(similarityUsers.get(1).get(1).toString());
             recommendMovie.add(recommdRate);
             recommendMovies.add(recommendMovie);
+            System.out.println(recommdRate);
             sumRate+=recommdRate;
         }
 
