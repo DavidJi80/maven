@@ -29,7 +29,7 @@ public class BaseUserRecommender {
         准备数据 这里是电影评分数据
         数据集，其中第一列表示用户id；第二列表示商品id；第三列表示评分，评分是5分制
         */
-        URL url=BaseUserRecommender.class.getClassLoader().getResource("movie.data");
+        URL url=BaseUserRecommender.class.getClassLoader().getResource("ratings.data");
         /*
         将数据加载到内存中
         基于文件的model，通过文件形式来读入,且此类型所需要读入的数据的格式要求很低，只需要满足每一行是用户id，物品id，用户偏好，且之间用tab或者是逗号隔开即可
@@ -51,6 +51,7 @@ public class BaseUserRecommender {
         构建基于用户的推荐系统
         */
         Recommender r = new GenericUserBasedRecommender(dataModel , neighbor, similarity);
+
 
         //得到所有用户的id集合
         LongPrimitiveIterator iter = dataModel .getUserIDs();
