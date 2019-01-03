@@ -20,6 +20,11 @@
             <artifactId>transport</artifactId>
             <version>6.4.3</version>
         </dependency>
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>6.4.3</version>
+        </dependency>
         <!-- elasticsearch依赖log4j -->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>

@@ -12,6 +12,7 @@
     <module>elasticsearch</module>
       <module>simpleCF</module>
       <module>mahout</module>
+      <module>helloworld</module>
   </modules>
 
   <name>maven</name>
