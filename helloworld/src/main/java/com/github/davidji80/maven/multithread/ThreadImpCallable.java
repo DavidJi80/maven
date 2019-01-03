@@ -22,7 +22,7 @@ public class ThreadImpCallable implements Callable<Integer> {
         ThreadImpCallable rt = new ThreadImpCallable();
 
         // 使用FutureTask来包装Callable对象
-        FutureTask<Integer> task = new FutureTask<Integer>(rt);
+        FutureTask<Integer> task = new FutureTask<>(rt);
         new Thread(task, "有返回值的线程").start();
         try {
             // 获取线程返回值
